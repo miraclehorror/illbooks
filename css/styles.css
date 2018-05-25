@@ -13,9 +13,12 @@
 nav {
 	padding: 5px 0;
 	border-bottom: solid black 3px;
+	width: 100%;
 	color: black;
 	text-align: center;	
-	font-family: Exo, sans-serif;	
+	font-family: Exo, sans-serif;
+/**	position: fixed;
+	top: 0; **/
 }
 
 nav a {
@@ -125,6 +128,12 @@ body.ostrich h1  {
 }
 */
 
+#egg-audio-icon {
+	width: 30px;
+	border: none;
+	margin: 0;
+	text-align: left;
+}
 
 .trackers {
   text-align:center;
@@ -154,7 +163,7 @@ body.ostrich h1  {
 }
 
 .active, .dot:hover {
-  background-color: #F68D91;  
+  background-color: #d51820;  
 }
 
 /* Fading animation */
@@ -179,8 +188,8 @@ body.ostrich h1  {
 	GARAGE PAGE 
 **/
 
-h1 {
-    
+html.garage {
+	background-color: black;
 }
 
 .garage {
@@ -193,17 +202,113 @@ nav.garage {
 }
 
 nav.garage a {
-	color: white;
+	color: #ffffff;
 }
 
-.explanation {
-	margin: 5px 20px 50px;
-	height: 100px;
+p.explanation {
+	padding: 1em;
 	display: none;
-	overflow: scroll;
-	
+}
+
+.mapped-artefact:hover {
+	cursor: pointer;
+}
+
+#garage-pages-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.garage-page{
+	border: solid white 1px;
+}
+
+.garage-page-link {
+	width: 45%;
+	margin: 20px 0;
+}
+
+.garage-page-link-horizontal {
+	width: 90%;
+	margin: 20px 0;
+}
+
+.garage-page-big{
+	width: 75%;
+	margin-bottom: 25px;
+	border: solid white 1px;
+}
+
+#explanation-initial {
+	text-align: center;
+	display: block;
+}
+
+#explanation-box {
+	height: 10em;
+	margin: 5px 20px 50px;
+	border: solid 2px white;
+	overflow-y: auto;	
 }
 
 #copyright {
 	text-align: center;
 }
+
+/**
+	ORIGINATOR
+**/
+
+#originator-portrait-container {
+	width: 300px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#originator-portrait {
+	width: 75%;
+	border: solid red 5px;	
+}
+
+/**
+	ILLUSTRATOR
+**/
+
+h1.illustrator {
+	margin-top: 50px;
+}
+
+#liza-portrait {
+	width: 20%;
+	margin-top: 50px;
+	}
+	
+
+/**
+	POSTERS
+**/
+
+.posters {
+	background-color: #f53db5;
+}
+
+#posters-flex-container {
+	width: auto%;
+	margin: 0 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; 
+}
+
+.poster {
+	display: inline-block;
+	height: 400px;
+	width: auto;
+	margin: 10px 20px;
+	border: solid black 2px;
+}
+
