@@ -210,6 +210,11 @@ body.ostrich h1  {
   to {opacity: 1}
 }
 
+#ostrich-copyright {
+	text-align: center;
+	margin-top: 25px;
+}
+
 /** 
 	GARAGE  
 **/
@@ -343,7 +348,7 @@ p.explanation {
 
 **/
 
-#copyright {
+#garage-copyright {
 	text-align: center;
 }
 
