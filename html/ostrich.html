@@ -20,68 +20,78 @@
   </header>	
 
 <body class="ostrich">
-  <h1>Story about an Ostrich</h1>
+
+  <div id="ostrich-title-audio-container">
+    <div id="audio-ostrich-container">
+      <audio id="audio-ostrich" controls>
+        <source src="..\media\ostrich.mp3" type="audio/mpeg">
+      </audio>	
+    </div>  
+	  
+    <h1>Story about an Ostrich</h1>  
+
+  </div>	
   
    <div class="slideshow-container">
    
     <div class="mySlides">
-	 <img src="..\images\1_ostrich.jpg" >
+	 <img class="ostrich" src="..\images\1_ostrich.jpg" >
     </div>	  
   
     <div class="mySlides">
-	  <img src="..\images\2_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\2_ostrich.jpg" >
     </div>
 	
     <div class="mySlides">
-	  <img src="..\images\3_ostrich.jpg" alt="Individual in a sweater sits on a tree branch. Neighborhood in background." >
+	  <img class="ostrich" src="..\images\3_ostrich.jpg" alt="Individual in a sweater sits on a tree branch. Neighborhood in background." >
     </div>
 
     <div class="mySlides">
-	  <img src="..\images\4_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\4_ostrich.jpg" >
     </div>
 
     <div class="mySlides">
-	  <img src="..\images\5_ostrich.jpg" >
-    </div>
-	
-	<div class="mySlides">
-	  <img src="..\images\6_ostrich.jpg" >
-    </div>
-
-    <div class="mySlides">
-	  <img src="..\images\7_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\5_ostrich.jpg" >
     </div>
 	
 	<div class="mySlides">
-	  <img src="..\images\8_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\6_ostrich.jpg" >
     </div>
 
     <div class="mySlides">
-	  <img src="..\images\9_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\7_ostrich.jpg" >
     </div>
 	
 	<div class="mySlides">
-	  <img src="..\images\10_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\8_ostrich.jpg" >
+    </div>
+
+    <div class="mySlides">
+	  <img class="ostrich" src="..\images\9_ostrich.jpg" >
+    </div>
+	
+	<div class="mySlides">
+	  <img class="ostrich" src="..\images\10_ostrich.jpg" >
     </div>
 
     <div class="mySlides fade">
-	  <img src="..\images\11_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\11_ostrich.jpg" >
     </div>
 	
 	<div class="mySlides">
-	  <img src="..\images\12_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\12_ostrich.jpg" >
     </div>
 	
 	<div class="mySlides">
-	  <img src="..\images\13_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\13_ostrich.jpg" >
     </div>
 
     <div class="mySlides">
-	  <img src="..\images\14_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\14_ostrich.jpg" >
     </div>
 	
 	<div class="mySlides">
-	  <img src="..\images\15_ostrich.jpg" >
+	  <img class="ostrich" src="..\images\15_ostrich.jpg" >
     </div>
 
 	<!-- Next and previous buttons CONSIDER TRYING jqery click function-->
@@ -90,7 +100,7 @@
   
   </div>
   
-  <img id="egg-audio-icon" src="..\images\ostrich-egg--10.png">
+   <img id="egg-audio-icon" src="..\images\ostrich-egg--10.png" onclick="showHideAudio('audio-ostrich')">
 
     <!-- The dots/circles -->
   <div class="trackers">
@@ -112,10 +122,6 @@
     <p class="dot" onclick="currentSlide(15)"><span class="page-number">15</span></p>
 	
   </div>  
-  
-  <audio controls>
-    <source src="..\media\ostrich.mp3" type="audio/mpeg">
-  </audio>	
   
   <script src="..\js\main.js" ></script>
   

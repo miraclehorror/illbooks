@@ -28,12 +28,8 @@ nav a {
 	text-decoration: none;
 }
 
-img {
-	  border: 5px solid black;
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 75%;
+a, u {
+    text-decoration: none;
 }
 
 /** 
@@ -42,6 +38,14 @@ img {
 
 .index{
 	font-family: Exo, sans-serif;
+}
+
+img.index {
+	  border: 5px solid black;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 75%;
 }
 
 #logo-flex-container{
@@ -75,8 +79,21 @@ h1 {
 **/
 
 
+#audio-ostrich-container{
+	position: absolute;
+}
+
+img.ostrich {
+	  border: 5px solid black;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 75%;
+}
+
 body.ostrich {
 	background-color: #ED1B24;
+	padding-bottom: 25px;
 }
 
 body.ostrich h1  {
@@ -84,7 +101,6 @@ body.ostrich h1  {
 	font-family: Exo, sans-serif;
 	font-weight: bolder;	
 }
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -122,22 +138,21 @@ body.ostrich h1  {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 } 
-/* On hover, add a black background color with a little bit see-through 
-.prev:hover, .next:hover {
-  background-color: green;
-}
-*/
 
 #egg-audio-icon {
 	width: 30px;
 	border: none;
-	margin: 0;
-	text-align: left;
+	margin: 1% 0 0 5%;
+	float: left;
+}
+
+#egg-audio-icon:hover {
+	cursor: pointer;
 }
 
 .trackers {
   text-align:center;
-  margin: 1% 0;
+  margin: 1% 5%;
 }
 
  
@@ -166,6 +181,17 @@ body.ostrich h1  {
   background-color: #d51820;  
 }
 
+#audio-ostrich-container {
+	margin: 0;
+}
+
+#audio-ostrich {
+	display: none;
+	margin: 0 auto;
+}
+
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -185,8 +211,32 @@ body.ostrich h1  {
 }
 
 /** 
-	GARAGE PAGE 
+	GARAGE  
 **/
+
+h1.garage {
+	padding-top: 15px;
+}
+
+#garage-note {
+	padding-top: 10px;
+}
+
+img.garage-page {
+	  border: 1px solid white;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+}
+
+img.garage-page {
+	width: 75%;
+}
+
+.garage-header, #garage-note {
+	text-align: center;
+	margin: 0 auto 25px;
+}
 
 html.garage {
 	background-color: black;
@@ -205,11 +255,6 @@ nav.garage a {
 	color: #ffffff;
 }
 
-p.explanation {
-	padding: 1em;
-	display: none;
-}
-
 .mapped-artefact:hover {
 	cursor: pointer;
 }
@@ -219,10 +264,6 @@ p.explanation {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.garage-page{
-	border: solid white 1px;
 }
 
 .garage-page-link {
@@ -235,10 +276,46 @@ p.explanation {
 	margin: 20px 0;
 }
 
+/**
+	GARAGE INDIVUDAL PAGES
+**/
+
+#garage-page-container {
+	width: 1027px;
+	margin: 10px auto 35px;
+	padding-bottom: 585px;
+	
+}
+
+
+.garage-page-back {
+	color: white;
+	font-family: Verdana;
+	font-size: 25px;
+	font-weight: bolder;
+	padding: 5px 0 0 10px; 
+	display: inline-block;
+	text-decoration: none;
+}
+
+.garage-page-back:hover {
+	color: red;
+}
+
+img.garage-page-big {
+	height: 576px;
+	margin-left: 300px;
+	position: absolute;
+}
+
+
 .garage-page-big{
-	width: 75%;
-	margin-bottom: 25px;
 	border: solid white 1px;
+}
+
+p.explanation {
+	padding: 1em;
+	display: none;
 }
 
 #explanation-initial {
@@ -247,11 +324,24 @@ p.explanation {
 }
 
 #explanation-box {
+	width: 300px;
+	border: dashed 1px white;
+	overflow-y: auto;
+	float: left;
+	position: absolute;
+	height: 576px
+}
+
+/**
+
+#explanation-box {
 	height: 10em;
 	margin: 5px 20px 50px;
 	border: solid 2px white;
 	overflow-y: auto;	
 }
+
+**/
 
 #copyright {
 	text-align: center;
@@ -261,38 +351,49 @@ p.explanation {
 	ORIGINATOR
 **/
 
-#originator-portrait-container {
-	width: 300px;
-	float: left;
-	padding: 0;
-	margin: 0;
+img.originator{
+	  border: 5px solid red;
+	  display: block;
+	  margin: 50px auto 15px;
+	  width: 320px;
 }
 
-#originator-portrait {
-	width: 75%;
-	border: solid red 5px;	
+h3.originator {
+	text-align: center;
 }
 
 /**
 	ILLUSTRATOR
 **/
 
+img.illustrator{
+	  border: 5px solid black;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+}
+
 h1.illustrator {
 	margin-top: 50px;
 }
 
 #liza-portrait {
-	width: 20%;
-	margin-top: 50px;
+	width: 320px;
+	margin: 50px auto 15px;
 	}
 	
-
+h3.illustrator {
+	text-align: center;
+}
 /**
 	POSTERS
 **/
 
 .posters {
 	background-color: #f53db5;
+}
+#posters-h1 {
+	padding: 25px 0;
 }
 
 #posters-flex-container {
@@ -311,4 +412,77 @@ h1.illustrator {
 	margin: 10px 20px;
 	border: solid black 2px;
 }
+
+/** 
+	CONTACT
+**/
+
+body.contact {
+	background: black;
+	color: white;
+}
+
+h1.contact {
+	margin-top: 15px;
+	margin-top: 15px;
+}
+
+nav.contact {
+	background: white;
+}
+
+label {
+	color: white;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=button] {
+    background-color: black	;
+    color: white;
+    padding: 12px 20px;
+    border: solid 2px white;
+    border-radius: 4px;
+    cursor: pointer;
+	font-style: bold;
+}
+
+input[type=button]:hover {
+	border-color: #ED1B24;
+	color: #ed1b24;
+}
+
+.contact-container {
+    border-radius: 5px;
+    padding: 20px 15%;
+	
+}
+
+/**
+	CONTACT RESPONSE
+**/
+
+#contact-message {
+	width: 90%;
+	margin: 50px auto;
+	text-align: center;
+
+}
+
+
+#contact-garbage {
+	display: block;
+	width: 250px;
+	margin: 50px auto;
+	}
 

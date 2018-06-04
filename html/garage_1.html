@@ -7,34 +7,34 @@
     <meta charset="UTF-8">
   </head>
 
-  <div class="garage">
+
   
     <header>
-	  <a href="garage.html">back</a>
+	  <a class="garage-page-back" href="garage.html"><</a>
     </header>	
 
-    <body id="garage-body">  
+    <body id="garage-page-body"> 
+	  <div id="garage-page-container">	
+	    <div id="explanation-box">
+		  <p class="explanation" id="explanation-initial">Click on items to learn what they are</p>
+	      <p class="explanation" id="thurible">The censer or vessel in which incense is burned at liturgical services. It consists of a cup-shaped metal body for holding charcoal and incense, with a separate lid for controlling the smoke and fire, and a chain, or chains, allowing the censer to swing safely without spilling its contents. (Etym. Latin t[h]uribulum, from t[h]us, [stem t(h)ur-], incense; from Greek thuos [sacrificial] incense, burned offering, offering.) 
+	      </p>
+	      <p class="explanation" id="tsarouchia">The Tsarouchia shoes of the Evzones weigh over three kilograms and feature at least 60 nails on the base of the shoe which simulate the sound of battle during the movement of the Evzone. The toe of the Tsarouchia is pointed upwards and covered by a black silk pom pom which is hand cut to shape. The base of the shoe is made from cowhide and over 300 hand stitches are required to hold each shoe together. The Evzones wear two pairs of Periskelides (woollen stockings) on each leg which are held up by the Epiknemides (silk garters) with tassel.
+	      The Tsarouchia shoes of the Evzones weigh over three kilograms and feature at least 60 nails on the base of the shoe which simulate the sound of battle during the movement of the Evzone. The toe of the Tsarouchia is pointed upwards and covered by a black silk pom pom which is hand cut to shape. The base of the shoe is made from cowhide and over 300 hand stitches are required to hold each shoe together. The Evzones wear two pairs of Periskelides (woollen stockings) on each leg which are held up by the Epiknemides (silk garters) with tassel.
+	      </p>
+		  <p class="explanation" id="vacuum-silhouette">A curious silhouette <img src="..\images\clip-vacuum.jpg"></p> 
+		  <p class="explanation" id="mower-silhouette">Another silhouette <img src="..\images\clip-mower.jpg"</p>
+	    </div>	  
 	  
-      <img class="garage-page-big" href="garage_1.html" src="..\images\1_garage.jpg" usemap=#garage_1>
-	  <map name="garage_1">
-	    <area class="mapped-artefact" onclick="showExplanation('thurible')" alt="thurible" title="thurible" coords="396,521,462,453,361,455,364,489,370,511" shape="poly">
-        <area class="mapped-artefact" onclick="showExplanation('tsarouchia')" alt="tsarouchia" title="tsarouchia" coords="453,504,472,541,530,546,532,517" shape="poly">
-		<area class="mapped-artefact" onclick="showExplanation('vacuum-silhouette')" alt="vacuum-silhouette" " title="vacuum-silhouette" coords="168,453,156,542,342,539,346,524,292,517,334,487,323,457" shape="poly">
-	  </map>
-	  
-	  </div>
-	  
-	  <div id="explanation-box">
-	    <p class=explanation id="explanation-initial">Explanation</p>
-	    <p class="explanation" id="thurible">The censer or vessel in which incense is burned at liturgical services. It consists of a cup-shaped metal body for holding charcoal and incense, with a separate lid for controlling the smoke and fire, and a chain, or chains, allowing the censer to swing safely without spilling its contents. (Etym. Latin t[h]uribulum, from t[h]us, [stem t(h)ur-], incense; from Greek thuos [sacrificial] incense, burned offering, offering.) 
-	    </p>
-	    <p class="explanation" id="tsarouchia">The Tsarouchia shoes of the Evzones weigh over three kilograms and feature at least 60 nails on the base of the shoe which simulate the sound of battle during the movement of the Evzone. The toe of the Tsarouchia is pointed upwards and covered by a black silk pom pom which is hand cut to shape. The base of the shoe is made from cowhide and over 300 hand stitches are required to hold each shoe together. The Evzones wear two pairs of Periskelides (woollen stockings) on each leg which are held up by the Epiknemides (silk garters) with tassel.
-	    The Tsarouchia shoes of the Evzones weigh over three kilograms and feature at least 60 nails on the base of the shoe which simulate the sound of battle during the movement of the Evzone. The toe of the Tsarouchia is pointed upwards and covered by a black silk pom pom which is hand cut to shape. The base of the shoe is made from cowhide and over 300 hand stitches are required to hold each shoe together. The Evzones wear two pairs of Periskelides (woollen stockings) on each leg which are held up by the Epiknemides (silk garters) with tassel.
-	    </p>
-		<p class="explanation" id="vacuum-silhouette">A curious silhouette</p>
-	  </div>
-  
-      <p id="copyright">COPYRIGHT SHIER & MAKHLINA 2018</p>
+        <img class="garage-page-big" src="..\images\1_garage.jpg" usemap=#garage_1>
+	    <map name="garage_1">
+	      <area class="mapped-artefact" onclick="showExplanation('thurible')" alt="thurible" title="thurible" coords="351,343,331,375,303,396,285,388,275,347" shape="poly">
+          <area class="mapped-artefact" onclick="showExplanation('tsarouchia')" alt="tsarouchia" title="tsarouchia" coords="405,393,375,391,359,381,349,392,365,414,404,415" shape="poly">
+		  <area class="mapped-artefact" onclick="showExplanation('vacuum-silhouette')" alt="silhouette" title="silhouette" coords="267,410,122,415,127,345,258,343" shape="poly">
+	      <area class="mapped-artefact" onclick="showExplanation('mower-silhouette')" alt="silhouette" title="silhouette" coords="591,434,474,407,466,377,445,360,447,345,585,345,589,376,601,389" shape="poly">
+		</map>
+		
+	  </div>     
 	  
 	  <script src="..\js\garage.js"></script>
 	

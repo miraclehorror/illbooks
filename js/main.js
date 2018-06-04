@@ -46,7 +46,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 } 
 
-
-
+function showHideAudio(id) {
+	element = document.getElementById(id);
+	getComputedStyle(element, null).display == 'none' ? element.style.display = "block" : element.style.display = "none";
+}
+//	console.log(element.currentStyle ? element.currentStyle.display : getComputedStyle(element, null).display);
 
 

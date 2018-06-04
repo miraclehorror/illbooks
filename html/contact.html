@@ -8,8 +8,8 @@
   </head>
 
   <header>
-    <nav class="ostrich">
-	  <a href="..\index.html">Home</a>|
+    <nav class="contact">
+	  <a href="..\index.html">Home</a>|-
 	  <a href="ostrich.html">Ostrich</a>|
 	  <a href="garage.html">Garage</a>|
 	  <a href="originator.html">Originator</a>|
@@ -20,9 +20,26 @@
   </header>	
 
   <body class="contact">
-    <h1>contact form</h1>
-  </body>
+    <h1 class="contact">contact form</h1>
+    
+	<div class="contact-container">
+      <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
 
+        <label for="email">Email (if you desire a response)</label>
+        <input type="text" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" style="height:200px"></textarea>
+	  <a id="submit-button" href="contact-response.html">
+        <input type="button" value="Send">
+	  </a>	
+    </form>
+  </div>
+
+  </body>
+ 
 </html>
 
 
